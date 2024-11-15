@@ -54,13 +54,13 @@ onAuthStateChanged(auth, (user) => {
   if (user) {
     loadUserProfile(user.uid);
   } else {
-    window.location.href = "https://pawm-tugas02.vercel.app//root/index.html";
+    window.location.href = "/root/index.html";
   }
 });
 
 function handleLogout() {
   signOut(auth).then(() => {
-    window.location.href = "https://pawm-tugas02.vercel.app//root/index.html";
+    window.location.href = "/root/index.html";
   }).catch((error) => {
     console.error("Error during logout:", error);
   });
