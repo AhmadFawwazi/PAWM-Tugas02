@@ -1,0 +1,323 @@
+#profile-icon {
+  position: absolute;
+  top: 75px; /* Sesuaikan jarak dari atas */
+  right: 50px; /* Sesuaikan jarak dari kanan */
+  cursor: pointer;
+  z-index: 10;
+}
+
+#profile-icon img {
+  width: 60px; /* Atur ukuran lebar ikon */
+  height: 60px; /* Atur ukuran tinggi ikon */
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+#logout-button {
+  position: absolute;
+  top: 55px; /* Geser ke bawah */
+  left: 40px; /* Geser ke kanan */
+  padding: 10px 20px;
+  background-color: maroon;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+}
+
+#logout-button:hover {
+  background-color: maroon;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:black; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: rgb(3, 3, 3);
+    font-family: "Arima", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .link-group{
+    display: flex;
+    justify-content: center;
+  }
+
+  .link-group-item{
+    color: white;
+    margin: 0 20px;
+  }
+
+  .link-group-item:hover {
+    text-decoration: none;
+    color:purple
+  }
+  
+  
+  .welcome-card {
+    position: relative; 
+    color: white; 
+    padding: 260px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    overflow: hidden;
+    background-image: url("assets/banner.jpg"); 
+  }
+
+  .logo {
+    width: 150px; /* Atur lebar sesuai keinginan */
+    height: auto; /* Menjaga rasio asli logo */
+    margin-bottom: 20px; /* Tambahkan jarak di bawah logo jika diperlukan */
+  }
+
+  .btn-link {
+    color: purple; /* Warna dasar link (ungu) */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    transition: color 0.3s ease; /* Efek transisi yang halus */
+  }
+  
+  .btn-link:hover {
+    color: blue; /* Warna saat link di-hover (biru) */
+  }
+  
+  .welcome-card::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-image: url('assets/banner.jpg');  */
+    background-size: cover; 
+    background-position: center; 
+    z-index: 1; 
+  }
+  
+  .welcome-card::after {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2; 
+  }
+  
+  .welcome-card h1,
+  .welcome-card p {
+    position: relative; 
+    z-index: 3; 
+  }
+  
+  
+
+  /* Section Styling */
+  .section {
+    padding: 40px 20px;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  /* pembuka style untuk card penjelasan materi */
+  .card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(64, 7, 237, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 6px 12px rgba(135, 206, 250, 0.7);
+  }
+  
+  .card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .card ul {
+    padding-left: 20px;
+  }
+  
+  .card ul li {
+    list-style: disc;
+    margin-bottom: 5px;
+  }
+  
+  /* penutup style untuk card penjelasan materi */
+  
+  /* Tool Form */
+  .tool-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(64, 7, 237, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .tool-card:hover {
+    box-shadow: 0 6px 12px rgba(135, 206, 250, 0.7);
+  }
+  
+  .tool-card h3 {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  button:hover {
+    background-color: #501144;
+  }
+  
+  #aritmatika-result, #geometri-result {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Latihan */
+  
+  .latihan-card {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(254, 254, 254, 0.1); 
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(64, 7, 237, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .latihan-card:hover {
+    box-shadow: 0 6px 12px rgba(135, 206, 250, 0.7);
+  }
+  
+  .latihan-card input {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%; 
+  }
+  
+  .latihan-card button {
+    padding: 10px 20px;
+    background-color: #f8f9f9; 
+    color: rgb(5, 5, 5); 
+    border: black; 
+    border-radius: 5px; 
+    cursor: pointer; 
+  }
+  
+  .latihan-card button:hover {
+    background-color: #4CAF50; 
+  }
+  
+  
+  /* ini style untuk footer nya */
+  footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-weight: bold; 
+  }
+  
+  /* ini tampilan Responsif untuk layar yang lebih kecil yah */
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .welcome-card {
+      padding: 20px; 
+    }
+  
+    h1 {
+      font-size: 20px; 
+    }
+  
+    p {
+      font-size: 14px; 
+    }
+  }
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column; 
+      align-items: center; 
+      gap: 20px; 
+    }
+  
+    .card {
+      width: 100%; 
+    }
+  }

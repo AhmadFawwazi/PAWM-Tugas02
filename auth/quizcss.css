@@ -1,0 +1,108 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #b9b3a9;
+  display: flex;
+  justify-content: center;
+}
+
+.game-container {
+  width: 450px;
+  padding: 20px;
+  margin-top: 80px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.answers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.answer {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.answer:hover {
+  background-color: #21c94b;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.start-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.start-btn:hover {
+  background-color: #0b648d;
+}
+
+#end-screen {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#end-screen.hidden {
+  display: none;
+}
+
+#end-screen .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#end-screen .btn:hover {
+  background-color: #37a047;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0; /* Ganti dengan warna sesuai keinginan */
+  background-image: url('assets/bgquiz.png'); /* Ganti dengan path gambar */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.game-container {
+  width: 450px;
+  padding: 20px;
+  margin-top: 80px;
+  background-color: rgba(255, 255, 255, 0.9); /* Transparansi jika ada gambar background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

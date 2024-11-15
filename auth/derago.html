@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DERAGO!</title>
+  <link rel="icon" href="assets/DERAGO_HITAM.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="deragocss.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <!-- Gantikan tombol logout dengan ikon profil -->
+    <a href="profile.html" id="profile-icon">
+      <img src="assets/PP.png" alt="Profile">
+    </a>
+    <div class="welcome-card">
+      <img src="assets/DERAGO_PUTIH.png" alt="Logo Website" class="logo">
+      <h1>DERAGO!</h1>
+      <p>Selamat Datang di DERAGO!</p>
+      <p>Sebuah website untuk membantu siswa dalam mempelajari salah satu materi dalam matematika, yaitu deret aritmatika dan geometri. Website ini menyediakan penjelasan materi, alat bantu hitung, dan latihan soal terkait deret aritmatika dan geometri</p>
+
+      <h1 class="link-group">
+        <a class="link-group-item" href="#aritmatika-geometri">Materi</a>
+        <a class="link-group-item" href="#tools">Tools</a>
+        <a class="link-group-item" href="#latihan-soal">Latihan Soal</a>
+      </h1>     
+      
+    </div>
+  </header>  
+
+  <main>
+    <!-- --------------About---------- -->
+    <section id="aritmatika-geometri" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-justify wow fadeInRight">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XZJdyPkCxuE?si=lsGg0OqbmDgKHQHU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 text-justify wow fadeInRight">
+            <h3>Definisi Deret Aritmatika</h3>
+            <p>adalah suatu barisan bilangan yang memiliki perbedaan tetap atau konstan antara satu suku dengan suku berikutnya. Suku-suku dalam deret ini diperoleh dengan menambahkan suatu nilai tetap, yang disebut "beda," pada suku sebelumnya. Misalnya, dalam deret 2, 5, 8, 11, 14, dan seterusnya, perbedaan antara setiap suku adalah 3. Deret ini sering digunakan untuk menggambarkan pertumbuhan linear atau perubahan yang berlangsung secara konsisten, seperti kenaikan suhu setiap jam atau jumlah langkah dalam suatu pola berulang. Silakan simak video disamping utuk mempertajam pemahaman Anda!</p>
+            <br><br><br><br><br>
+          </div>
+          <div class="col-md-6 text-justify wow fadeInLeft">
+            <h3>Definisi Deret Geometri</h3>
+            <p>adalah barisan bilangan yang setiap sukunya diperoleh dengan mengalikan suku sebelumnya dengan suatu nilai tetap yang disebut "rasio." Deret ini memiliki pola penggandaan yang konsisten, sehingga nilai dari suku-suku dalam deret ini berubah secara eksponensial. Sebagai contoh, deret 3, 6, 12, 24, 48, dan seterusnya memiliki rasio 2, di mana setiap suku diperoleh dengan mengalikan suku sebelumnya dengan 2. Deret geometri sering digunakan untuk menggambarkan proses yang melibatkan pertumbuhan atau penyusutan eksponensial, seperti bunga majemuk dalam investasi atau pertumbuhan populasi. Silakan simak video disamping utuk mempertajam pemahaman Anda!</p>
+            <br><br><br>
+          </div>
+          <div class="col-md-6 text-justify wow fadeInRight">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zRKZ0-kOUZM?si=rQFLgMOLsMEbeB2Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Penjelasan Deret Aritmatika dan Geometri -->
+    <section id="Rangkuman" class="section">
+      <div class="container card-container">
+        <!-- Card Deret Aritmatika -->
+        <div class="card">
+          <h2>Rangkuman Deret Aritmatika</h2>
+          <p>
+            Deret Aritmatika adalah deret bilangan yang memiliki selisih tetap antara dua suku berurutan. Rumus umum untuk mencari suku ke-n dari deret aritmatika adalah:
+          </p>
+          <p><strong>Un = a + (n - 1) * d</strong></p>
+          <p>
+            Keterangan:
+            <ul>
+              <li>Un = suku ke-n</li>
+              <li>a = suku pertama</li>
+              <li>n = nomor suku yang dicari</li>
+              <li>d = selisih antar suku</li>
+            </ul>
+          </p>
+        </div>
+
+        <!-- Card Deret Geometri -->
+        <div class="card">
+          <h2>Rangkuman Deret Geometri</h2>
+          <p>
+            Deret Geometri adalah deret bilangan yang memiliki rasio tetap antara dua suku berurutan. Rumus umum untuk mencari suku ke-n dari deret geometri adalah:
+          </p>
+          <p><strong>Un = a * r^(n - 1)</strong></p>
+          <p>
+            Keterangan:
+            <ul>
+              <li>Un = suku ke-n</li>
+              <li>a = suku pertama</li>
+              <li>n = nomor suku yang dicari</li>
+              <li>r = rasio antar suku</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools untuk Menghitung Deret -->
+    <br><br>
+    <section id="tools" class="section">
+      <div class="container">
+        <h2>Tools: Hitung Suku ke-n</h2>
+
+        <!-- Deret Aritmatika -->
+        <div class="tool-card">
+          <h3>Hitung Suku ke-n Deret Aritmatika</h3>
+          <form id="aritmatika-form">
+            <label for="a1">Suku Pertama (a):</label>
+            <input type="number" id="a1" required>
+
+            <label for="d">Selisih (d):</label>
+            <input type="number" id="d" required>
+
+            <label for="n1">Nomor Suku (n):</label>
+            <input type="number" id="n1" required>
+
+            <br><br>
+            <button type="submit">Hitung</button>
+          </form>
+          <p id="aritmatika-result"></p>
+        </div>
+
+        <!-- Deret Geometri -->
+        <div class="tool-card">
+          <h3>Hitung Suku ke-n Deret Geometri</h3>
+          <form id="geometri-form">
+            <label for="a2">Suku Pertama (a):</label>
+            <input type="number" id="a2" required>
+
+            <label for="r">Rasio (r):</label>
+            <input type="number" id="r" required>
+
+            <label for="n2">Nomor Suku (n):</label>
+            <input type="number" id="n2" required>
+
+            <br><br>
+            <button type="submit">Hitung</button>
+          </form>
+          <p id="geometri-result"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latihan Soal Interaktif -->
+    <section id="latihan-soal" class="section">
+      <div class="container">
+        <div class="latihan-card">
+        <h2>Easy Quiz</h2>
+          <p id="soal"></p>
+          <input type="number" id="jawaban" placeholder="Masukkan jawaban Anda" required>
+          <br><br>
+          <button id="cek-jawaban">Cek Jawaban</button>
+          <p id="feedback"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz competitive -->
+    <section id="quiz-section" class="section">
+      <div class="container text-center">
+        <h2>Extreme Quiz</h2>
+        <p>Berpacu dengan waktu, seberapa berani Anda?</p>
+        <a href="quizhtml.html" class="btn btn-primary">Mulai Extreme Quiz</a>
+      </div>
+    </section>
+    
+  </main>
+
+  <footer>
+    <p>Made by Ahmad Fawwazi 18222117</p>
+  </footer>
+
+  <script src="deragojs.js"></script>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCrn_5-iXrlMqt36fvLDnJ6FJfBPQ_PDks",
+      authDomain: "auth-derago.firebaseapp.com",
+      databaseURL: "https://auth-derago-default-rtdb.firebaseio.com",
+      projectId: "auth-derago",
+      storageBucket: "auth-derago.firebasestorage.app",
+      messagingSenderId: "499415292914",
+      appId: "1:499415292914:web:e2a20c36a36186ed0ea96b"
+    };
+
+    // Initialize Firebase
+    initializeApp(firebaseConfig);
+  </script>
+</body>
+</html>

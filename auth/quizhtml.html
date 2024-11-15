@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="quizcss.css">
+  <title>DERAGO!</title>
+  <link rel="icon" href="assets/DERAGO_HITAM.jpg" type="image/x-icon">
+</head>
+<body>
+  <div class="game-container">
+    <div class="game-card">
+      <header>
+        <h1>Merasa cepat? Tuntaskan quiz berikut baru aku mengakuimu cepat!</h1>
+      </header>
+      <div class="game-content">
+        <div class="progress-bar">
+          <div id="progress"></div>
+        </div>
+        <div class="question-container">
+          <h2 id="question">Klik Start game untuk memulai!</h2>
+        </div>
+        <div class="answers-container">
+          <button class="answer" data-id="1"></button>
+          <button class="answer" data-id="2"></button>
+          <button class="answer" data-id="3"></button>
+          <button class="answer" data-id="4"></button>
+        </div>
+        <div class="status-bar">
+          <p>Score: <span id="score">0</span></p>
+          <p>High Score: <span id="high-score">0</span></p>
+          <p>Time Left: <span id="time">6000</span> seconds</p>
+        </div>
+        <button id="start" class="start-btn">Start Game</button>
+        <div id="end-screen" class="hidden">
+          <h2>Quiz Selesai!</h2>
+          <p>Skor Anda: <span id="final-score"></span></p>
+          <p>High Score: <span id="final-high-score"></span></p>
+          <p>Waktu Pengerjaan: <span id="final-time"></span> detik</p>
+          <a href="derago.html" class="btn btn-primary">Kembali ke Halaman Utama</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="quizjs.js"></script>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+    import { getDatabase } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCrn_5-iXrlMqt36fvLDnJ6FJfBPQ_PDks",
+      authDomain: "auth-derago.firebaseapp.com",
+      databaseURL: "https://auth-derago-default-rtdb.firebaseio.com",
+      projectId: "auth-derago",
+      storageBucket: "auth-derago.firebasestorage.app",
+      messagingSenderId: "499415292914",
+      appId: "1:499415292914:web:e2a20c36a36186ed0ea96b"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+  </script>
+</body>
+</html>
