@@ -68,7 +68,7 @@ buttonSignin.addEventListener("click", async (e) => {
     });
 
     console.log("User berhasil login:", user);
-    location.href = "http://127.0.0.1:5500/auth/derago.html"; // Redirect ke halaman utama
+    location.href = "https://pawm-tugas02.vercel.app/auth/derago.html"; // Redirect ke halaman utama
   } catch (error) {
     console.error("Error saat Sign In:", error);
     alert(error.message);
