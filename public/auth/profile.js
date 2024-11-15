@@ -54,13 +54,13 @@ onAuthStateChanged(auth, (user) => {
   if (user) {
     loadUserProfile(user.uid);
   } else {
-    window.location.href = "/root/index.html";
+    window.location.href = "/index.html";
   }
 });
 
 function handleLogout() {
   signOut(auth).then(() => {
-    window.location.href = "/root/index.html";
+    window.location.href = "/index.html";
   }).catch((error) => {
     console.error("Error during logout:", error);
   });
